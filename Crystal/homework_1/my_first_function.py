@@ -26,11 +26,11 @@ def some_other_function(list_of_numbers):
 # Place your code here:
 
 
-def addition(x, y):
-    return x + y
+def sum_function(some_list):
+    return sum(some_list)
 
 
-print("RESULTS: ", addition(3, 1))
+print("RESULTS: ", sum_function([1,2,3,4]))
 
 
 def average(some_list):
