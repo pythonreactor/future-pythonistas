@@ -27,7 +27,7 @@ def some_other_function(list_of_numbers):
 def sum_numbers(list_of_numbers):
     return sum(list_of_numbers)
 
-list_of_numbers = (1, 2, 3, 4)
+list_of_numbers = [1, 2, 3, 4]
 result = sum_numbers(list_of_numbers)
 print("the sum of the numbers is =", result)
 
@@ -38,7 +38,7 @@ from statistics import mean
 def average(list_of_numbers):
     return mean(list_of_numbers)
 
-list_of_numbers = (1, 2, 3, 4)
+list_of_numbers = [1, 2, 3, 4]
 result = average(list_of_numbers)
 print("the average of the numbers is =", result)
 
