@@ -32,13 +32,11 @@ result = sum_numbers(list_of_numbers)
 print("the sum of the numbers is =", result)
 
 
-from statistics import mean
-
-
 def average(list_of_numbers):
-    return mean(list_of_numbers)
+    total = sum(list_of_numbers)
+    return total/len(list_of_numbers)
 
-list_of_numbers = [1, 2, 3, 4]
+
 result = average(list_of_numbers)
 print("the average of the numbers is =", result)
 
