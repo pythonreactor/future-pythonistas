@@ -9,6 +9,31 @@ def some_function(list_of_numbers):
     return sum_of_numbers
 """
 
-# Place your code here:
+"""
+╭━━━┳╮╱╱╭━━┳━━━━┳━━━━┳╮╱╱╭╮╭━━━┳━━━┳━━━┳━━━┳━━┳━━━╮
+┃╭━╮┃┃╱╱╰┫┣┻━━╮━┣━━╮━┃╰╮╭╯┃┃╭━╮┃╭━╮┃╭━╮┃╭━╮┣┫┣┫╭━╮┃
+┃┃╱╰┫┃╱╱╱┃┃╱╱╭╯╭╯╱╭╯╭┻╮╰╯╭╯┃┃╱╰┫┃╱┃┃╰━━┫╰━━╮┃┃┃╰━╯┃
+┃┃╭━┫┃╱╭╮┃┃╱╭╯╭╯╱╭╯╭╯╱╰╮╭╯╱┃┃╭━┫┃╱┃┣━━╮┣━━╮┃┃┃┃╭━━╯
+┃╰┻━┃╰━╯┣┫┣┳╯━╰━┳╯━╰━╮╱┃┃╱╱┃╰┻━┃╰━╯┃╰━╯┃╰━╯┣┫┣┫┃
+╰━━━┻━━━┻━━┻━━━━┻━━━━╯╱╰╯╱╱╰━━━┻━━━┻━━━┻━━━┻━━┻╯
+"""
+
+def sum_numbers(list_of_numbers):
+    return sum(list_of_numbers)
 
 
+list_of_numbers = [1, 2, 3, 4, 5]
+result = sum_numbers(list_of_numbers)
+print("The sum of the numbers is =", result)
+
+from statistics import mean
+
+
+def Average(list_of_numbers):
+    return mean(lst)
+
+
+lst = [1, 2, 3, 4, 5]
+average = Average(lst)
+
+print("The average of the list =", round(average))
