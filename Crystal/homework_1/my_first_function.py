@@ -26,3 +26,16 @@ def some_other_function(list_of_numbers):
 # Place your code here:
 
 
+def addition(x, y):
+    return x + y
+
+
+print("RESULTS: ", addition(3, 1))
+
+
+def average(some_list):
+    total = sum(some_list)
+    return total / len(some_list)
+
+
+print("RESULTS: ", average([3, 6, 3, 9, 1]))
