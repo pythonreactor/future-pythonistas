@@ -24,5 +24,20 @@ def some_other_function(list_of_numbers):
 """
 
 # Place your code here:
+def sum_numbers(list_of_numbers):
+    return sum(list_of_numbers)
+
+list_of_numbers = [1, 2, 3, 4]
+result = sum_numbers(list_of_numbers)
+print("the sum of the numbers is =", result)
+
+
+def average(list_of_numbers):
+    total = sum(list_of_numbers)
+    return total/len(list_of_numbers)
+
+
+result = average(list_of_numbers)
+print("the average of the numbers is =", result)
 
 
