@@ -66,7 +66,6 @@ class Animal:
         return response
 
 
-
 best_animal_ever = Animal(
     name="Dolly",
     age=5,
@@ -77,18 +76,10 @@ best_animal_ever = Animal(
     sad="sad"
 )
 
-best_animal_ever.get_name
-
-best_animal_ever.get_age
-
-best_animal_ever.get_species
-
-best_animal_ever.get_color
-
-best_animal_ever.get_sound
-
-best_animal_ever.get_animal_happy
-
-best_animal_ever.get_animal_sad
-
-
+print(best_animal_ever.get_name())
+print(best_animal_ever.get_age())
+print(best_animal_ever.get_species())
+print(best_animal_ever.get_color())
+print(best_animal_ever.get_sound())
+print(best_animal_ever.get_animal_happy())
+print(best_animal_ever.get_animal_sad())
