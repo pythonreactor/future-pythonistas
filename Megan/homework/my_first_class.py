@@ -24,4 +24,62 @@ An example of this is available in lessons/learning_classes.py
 
 # Place your code here
 
+class Animal:
+    """Class definition that defines an Animal object and it's attributes"""
 
+    def __init__(self, name, age, species, color, sound, happy, sad):
+        """The constructor method for the Animal class"""
+        self.name = name
+        self.age = age
+        self.species = species
+        self.color = color
+        self.sound = sound
+        self.happy = happy
+        self.sad = sad
+
+    def get_name(self):
+        """Simple 'get' method to return the Animal's name"""
+        return self.name
+
+    def get_age(self):
+        """Simple 'get' method to return the Animal's age"""
+        return self.age
+
+    def get_species(self):
+        """Simple 'get' method to return the Animal's species"""
+        return self.species
+
+    def get_color(self):
+        """Simple 'get' method to return the Animal's color"""
+        return self.color
+
+    def get_sound(self):
+        """Simple 'get' method to return the Animal's sound"""
+        return self.sound
+
+    def get_animal_happy(self):
+        response = f"{self.name} is happy"
+        return response
+
+    def get_animal_sad(self):
+        response = f"{self.name} is sad"
+        return response
+
+
+best_animal_ever = Animal(
+    name="Dolly",
+    age=5,
+    species="dolphin",
+    color="pink",
+    sound="EEeeeEEEeee",
+    happy="happy",
+    sad="sad"
+)
+
+print(best_animal_ever.get_name())
+print(best_animal_ever.get_age())
+print(best_animal_ever.get_species())
+print(best_animal_ever.get_color())
+print(best_animal_ever.get_sound())
+print(best_animal_ever.get_animal_happy())
+print(best_animal_ever.get_animal_sad())
