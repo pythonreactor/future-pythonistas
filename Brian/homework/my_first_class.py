@@ -36,7 +36,7 @@ An example of this is available in lessons/learning_classes.py
 
 """
 
-class Sloth:
+class Animal:
 
     def __init__(self, name, age, species, color, sound, happy, sad):
 
@@ -48,45 +48,44 @@ class Sloth:
         self.happy = happy
         self.sad = sad
 
-    def get_happy(self):
-        if self.age < 2011:
-            self.happy = True
-        else:
-            self.sad = False
 
-        return self.happy
+    def get_name(self):
+        return self.name
 
-    def set_name(self, sloth):
-        self.name = sloth
+    def get_age(self):
+        return self.age
 
-    def set_age(self, twelve):
-        self.age = 13
+    def get_species(self):
+        return self.species
 
-    def set_species(self, bradypuspygmaeus):
-        self.species = bradypuspygmaeus
+    def get_color(self):
+        return self.color
 
-    def set_color(self, brown):
-        self.color = brown
+    def get_sound(self):
+        return self.sound
 
-    def set_sound(self, squeak):
-        self.sound = squeak
+    def get_animal_happy(self):
+        response = f"{self.name} is happy"
+        return response
 
-    def set_happy(self, yes):
-        self.happy = yes
+    def get_animal_sad(self):
+        response = f"{self.name} is not sad"
+        return response
 
-    def set_sad(self, no):
-        self.sad = no
+animal_ruler = Animal(
+    name="sloth",
+    age=13,
+    species="bradypus pygmaeus",
+    color="grey",
+    sound="squeak",
+    happy="yes",
+    sad="no"
+)
 
-        return True
-
-animal = Sloth
-name="sloth",
-age=13,
-species="bradypuspygmaeus",
-sound="squeak"
-happy="yes"
-sad="no"
-
-animal.name
-
-def __init__(self, name, age, species, sound, happy, sad)
+print(animal_ruler.get_name())
+print(animal_ruler.get_age())
+print(animal_ruler.get_species())
+print(animal_ruler.get_color())
+print(animal_ruler.get_sound())
+print(animal_ruler.get_animal_happy())
+print(animal_ruler.get_animal_sad())
