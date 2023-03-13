@@ -79,4 +79,14 @@ class Sloth:
 
         return True
 
+animal = Sloth
+name="sloth",
+age=13,
+species="bradypuspygmaeus",
+sound="squeak"
+happy="yes"
+sad="no"
 
+animal.name
+
+def __init__(self, name, age, species, sound, happy, sad)
