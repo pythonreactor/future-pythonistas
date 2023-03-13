@@ -27,15 +27,13 @@ An example of this is available in lessons/learning_classes.py
 class Animal:
     """Class definition that defines an Animal object and it's attributes"""
 
-    def __init__(self, name, age, species, color, sound, happy, sad):
+    def __init__(self, name, age, species, color, sound):
         """The constructor method for the Animal class"""
         self.name = name
         self.age = age
         self.species = species
         self.color = color
         self.sound = sound
-        self.happy = happy
-        self.sad = sad
 
     def get_name(self):
         """Simple 'get' method to return the Animal's name"""
@@ -72,8 +70,6 @@ best_animal_ever = Animal(
     species="dolphin",
     color="pink",
     sound="EEeeeEEEeee",
-    happy="happy",
-    sad="sad"
 )
 
 print(best_animal_ever.get_name())
